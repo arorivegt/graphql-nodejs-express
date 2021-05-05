@@ -1,0 +1,32 @@
+{
+    "courses":[
+        {
+            "id":1,
+            "tittle":"NodeJS Course",
+            "author":"John Doe",
+            "topic": "Javascript",
+            "url": "www.google.com"
+        },
+        {
+            "id":2,
+            "tittle":"NodeJS Course",
+            "author":"John Doe",
+            "topic": "nodejs",
+            "url": "www.google.com"
+        },
+        {
+            "id":3,
+            "tittle":"NodeJS Course",
+            "author":"John Doe",
+            "topic": "Javascript",
+            "url": "www.google.com"
+        },
+        {
+            "id":4,
+            "tittle":"NodeJS Course",
+            "author":"John Doe",
+            "topic": "Java",
+            "url": "www.google.com"
+        }
+    ]
+}
