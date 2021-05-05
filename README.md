@@ -1,2 +1,2 @@
-# graphql-nodejs-express
-i create a proyect with GraphQL, NodeJS and Express as my framework
+# Graphql-nodejs-express
+i create a project with GraphQL, NodeJS and Express as my framework
