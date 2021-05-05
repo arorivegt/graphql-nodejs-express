@@ -14,6 +14,11 @@ var schema = buildSchema(`
       courses(topic:String):[Course]
   }
 
+  type Mutation{
+    updateCourseTopic(id:Int!, topic:String!): Course
+  }
+
+
   type Course {
       id: Int
       tittle: String
@@ -39,9 +44,21 @@ let getCourses= (args) => {
     }
 }
 
+let updateCourseTopic = ({id, topic}) =>{
+    courses.map(course => {
+      if (course.id === id){
+          course.topic = topic;
+          return course;
+      }  
+    })
+
+    return courses.filter(course => course.id == id)[0];
+}
+
 var root = { 
     course: getCourse,
-    courses: getCourses
+    courses: getCourses,
+    updateCourseTopic: updateCourseTopic
 
 };
 
