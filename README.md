@@ -79,6 +79,8 @@ fragment courseFields on Course{
   
 }
 
+```
+
 ```sh
 mutation updateCourseTopic($id:Int!, $topic:String!){
   updateCourseTopic(id: $id, topic: $topic){
@@ -100,5 +102,4 @@ fragment courseFields on Course{
   "topic": "NodeJS"
 }
 
-```
 ```
