@@ -79,5 +79,26 @@ fragment courseFields on Course{
   
 }
 
+```sh
+mutation updateCourseTopic($id:Int!, $topic:String!){
+  updateCourseTopic(id: $id, topic: $topic){
+    ...courseFields
+  }
+} 
 
+fragment courseFields on Course{
+  id
+  tittle
+  author
+  topic
+  url
+}
+
+#Query variables
+{
+  "id": 3,
+  "topic": "NodeJS"
+}
+
+```
 ```
